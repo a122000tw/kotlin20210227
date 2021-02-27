@@ -84,7 +84,7 @@ fun main(args: Array<String>) {
             break
         } else if (guess < ans) {
             println("請猜大一點")
-        } else if(guess > ans) {
+        } else {
             println("請猜小一點")
         }
     }
