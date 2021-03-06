@@ -20,6 +20,7 @@ fun main() {
     }
     // 使用 lambda 創建
     //0-4
+    // val num3 = Array(5, {i -> i * 1})
     val num3 = Array(5) {i -> i * 1}
     for(i in num3.indices) {
         println(num3[i])
@@ -28,6 +29,13 @@ fun main() {
     // val num4 = Array(4, { i -> Random.nextInt(10)})
     val num4 = Array(4) { _ -> Random.nextInt(10)}
     println(num4.contentToString()) // Arrays.toString()
+    // setter & getter
+    var n1 = num4.get(1) // num4[1]
+    println(n1)
+    num4.set(1, 9) // num4[1] = 9
+    println(num4.contentToString())
 
+    // for-each (印出元素內容)
+    num4.forEach { n -> println(n) }
 
 }
