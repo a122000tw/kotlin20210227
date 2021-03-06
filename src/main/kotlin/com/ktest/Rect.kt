@@ -7,10 +7,15 @@ class Rect(val h:Int, val w: Int) {
         get() {
             return h == w
         }
+
+    override fun toString(): String {
+        return "Rect(h: ${h}, w:${w}, area:${area}, isSquare:${isSquare})"
+    }
 }
 
 fun main() {
     val rect = Rect(10, 10)
     println(rect.area)
     println(rect.isSquare)
+    println(rect)
 }
