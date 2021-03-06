@@ -6,3 +6,4 @@ class Student {
     var isPass: Boolean = false // 產生 isPass() (getPass)& setPass()
 
 }
+
