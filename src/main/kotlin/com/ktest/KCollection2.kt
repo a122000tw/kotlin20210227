@@ -11,5 +11,7 @@ fun main() {
     // 請問年紀最大的人是誰?
     val p = people.maxByOrNull { it.age }
     println(p)
+    // 請問平均幾歲?
+    println(people.stream().mapToInt(Person::age).average().asDouble)
 
 }
