@@ -5,6 +5,7 @@ import java.lang.Exception
 
 // DRY (Don't repeat Yourself)
 // 減少重複的程式碼
+
 data class User(val id:Int, val name:String, val address:String)
 
 // 撰寫一個可以驗證 User 的繼承函式
