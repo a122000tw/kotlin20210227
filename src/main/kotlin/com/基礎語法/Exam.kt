@@ -1,10 +1,9 @@
-package com.ktest
+package com.基礎語法
 
-class Exam2() {
-    val name: String = ""
+class Exam(val name: String) {
     var score: Int = 0
     // 次要建構子
-    constructor(name: String, s: Int = 0):this() {
+    constructor(name: String, s: Int = 0):this(name) {
         this.score = s
     }
 }

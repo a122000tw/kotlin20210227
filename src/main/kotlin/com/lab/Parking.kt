@@ -25,7 +25,7 @@ fun main() {
             println("最新車位狀態: ${p.toBinary(num)}")
         } else {
             n = log2(n.toDouble()).toInt()
-            println("${n} 號車位無法停車")
+            println("$n 號車位無法停車")
         }
     }
 
