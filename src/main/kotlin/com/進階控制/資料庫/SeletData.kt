@@ -24,3 +24,17 @@ import java.sql.DriverManager
 *
 * 把 mydb.db 複製到專案路徑下
 * */
+
+fun main() {
+    val url = "jdbc:sqlite:mydb.db"
+    val conn = DriverManager.getConnection(url)
+    val stmt = conn.createStatement()
+    val sql = "select id, name, age from user"
+    val rs = stmt.executeQuery(sql)
+    while (rs.next()) {
+        println("${rs.getInt("id")}\t${rs.getString("name")}\t${rs.getInt("age")}")
+    }
+    rs.close()
+    stmt.close()
+    conn.close()
+}
