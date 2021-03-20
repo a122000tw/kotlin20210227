@@ -35,7 +35,6 @@ fun case2() {
 
     }
 }
-
 fun main() {
     case1()
     case2()
