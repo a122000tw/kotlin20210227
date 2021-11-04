@@ -1,2 +1,3 @@
 rootProject.name = 'kotlin20210227'
+include 'java test'
 
